@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/pbt"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="196dp"
+        android:layout_below="@id/submit"
+        android:textColor="@color/green"
+        android:text="0%"
+        android:textSize="30dp"
+         />
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pbt"
+        android:layout_marginTop="-196dp"
+        android:max="30"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pbt"
+        android:layout_marginTop="-450dp"
+        android:max="30" />
+
+    <EditText
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:ems="10"
+        android:textColorHint="@color/green"
+
+        android:hint="Enter the bill amount"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+         />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bill"
+        android:background="@color/darkgreen"
+        android:text="Submit"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/total"
+        android:background="@color/darkgreen"
+        android:text="Email bill"
+        android:textColor="@color/white"
+        />
+
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/seekBar"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+
+        android:textSize="20sp"
+        android:text="Tip: " />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tip"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        android:text="Total Bill : $" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/otr" />
+
+</RelativeLayout>
