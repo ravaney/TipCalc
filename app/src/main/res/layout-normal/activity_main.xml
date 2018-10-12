@@ -10,13 +10,13 @@
 
     <Toolbar
         android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        ></Toolbar>
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="gone" />
     <TextView
         android:id="@+id/pbt"
         android:layout_width="61dp"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
-        android:layout_marginBottom="200dp"></Spinner>
+        android:layout_marginBottom="200dp"/>
 
 
 
@@ -56,9 +56,10 @@
 
         <RadioButton
             android:id="@+id/No"
-            android:text="No"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="No" />
         <RadioButton
             android:id="@+id/radioTotal"
             android:text="Total"
